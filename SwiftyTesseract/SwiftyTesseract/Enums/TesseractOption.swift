@@ -126,6 +126,32 @@ extension TesseractEnvironment: CustomStringConvertible {
   }
 }
 
+public struct OptionSet {
+  private var set: Set<TesseractOption>
+  
+  public mutating func insert(_ option: TesseractOption) {
+    set.insert(option)
+  }
+  
+  public mutating func update(_ option: TesseractOption) {
+    set.update(with: option)
+  }
+  
+  public func subtracting(_ optionSet: OptionSet) -> OptionSet {
+    return OptionSet(set: set.subtracting(options: optionSet.set))
+  }
+  
+  public func forEach(_ fn: (TesseractOption) -> ()) {
+    set.forEach(fn)
+  }
+}
+
+extension OptionSet: ExpressibleByArrayLiteral {
+  public init(arrayLiteral elements: TesseractOption...) {
+    set = Set(elements)
+  }
+}
+
 extension Set where Element == TesseractOption {
   func subtracting(options: Set<TesseractOption>) -> Set<TesseractOption> {
     var copy = self

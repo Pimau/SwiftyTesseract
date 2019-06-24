@@ -85,7 +85,7 @@ class SwiftyTesseractTests: XCTestCase {
       engineMode: .tesseractOnly,
       options: [.whiteList("ABCDEFGHIJKLMNOPQRSTUVWXYZ.")]
     )
-    swiftyTesseract.options.update(with: .whiteList(""))
+    swiftyTesseract.options.update(.whiteList(""))
     
     let image = getImage(named: "IMG_1108.jpg")
     
@@ -125,7 +125,7 @@ class SwiftyTesseractTests: XCTestCase {
   func testMultipleSpacesImage_withPreserveMultipleSpaces() {
     swiftyTesseract = SwiftyTesseract(language: .english, bundle: bundle, engineMode: .tesseractOnly)
     
-    swiftyTesseract.options.update(with: .preserveInterwordSpaces(true))
+    swiftyTesseract.options.update( .preserveInterwordSpaces(true))
     
     let image = getImage(named: "MultipleInterwordSpaces.jpg")
 
@@ -142,7 +142,7 @@ class SwiftyTesseractTests: XCTestCase {
 
   func testNormalAndSmallFontsImage_withMinimumCharacterHeight() {
     swiftyTesseract = SwiftyTesseract(language: .english, bundle: bundle, engineMode: .tesseractOnly)
-    swiftyTesseract.options.update(with: .minimumCharacterHeight(15))
+    swiftyTesseract.options.update( .minimumCharacterHeight(15))
     
     let image = getImage(named: "NormalAndSmallFonts.jpg")
     

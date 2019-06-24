@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PDFKit
 import libtesseract
 import libleptonica
 
@@ -25,9 +26,9 @@ public class SwiftyTesseract {
   /// Required to make `performOCR(on:completionHandler:)` thread safe. Runs faster on average than a `DispatchQueue` with `.barrier` flag.
   private let semaphore = DispatchSemaphore(value: 1)
 
-  public var options: Set<TesseractOption> {
+  public var options: OptionSet {
     didSet {
-      options.subtracting(options: oldValue).forEach { $0.setVariable(to: tesseract) }
+      options.subtracting(oldValue).forEach { $0.setVariable(to: tesseract) }
     }
   }
   
@@ -40,7 +41,7 @@ public class SwiftyTesseract {
   private init(languageString: String,
                bundle: Bundle,
                engineMode: EngineMode,
-               options: Set<TesseractOption>) {
+               options: OptionSet) {
     
     self.bundle = bundle
     self.options = options
@@ -73,7 +74,7 @@ public class SwiftyTesseract {
   public convenience init(languages: [RecognitionLanguage],
               bundle: Bundle = .main,
               engineMode: EngineMode = .lstmOnly,
-              options: Set<TesseractOption> = []) {
+              options: OptionSet = []) {
     
     let stringLanguages = RecognitionLanguage.createLanguageString(from: languages)
     self.init(languageString: stringLanguages, bundle: bundle, engineMode: engineMode, options: options)
@@ -89,7 +90,7 @@ public class SwiftyTesseract {
   public convenience init(language: RecognitionLanguage,
                           bundle: Bundle = .main,
                           engineMode: EngineMode = .lstmOnly,
-                          options: Set<TesseractOption> = []) {
+                          options: OptionSet = []) {
     
     self.init(languages: [language], bundle: bundle, engineMode: engineMode, options: options)
   }
