@@ -35,7 +35,6 @@
 		6255DBA82159CEF400A52189 /* tiffconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 6255DB352159CEF400A52189 /* tiffconf.h */; };
 		6255DBAF2159CEF400A52189 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6255DB3E2159CEF400A52189 /* libpng.a */; };
 		6255DBB02159CEF400A52189 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6255DB3F2159CEF400A52189 /* libtiff.a */; };
-		6255DBB22159CEF400A52189 /* libtiffxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6255DB412159CEF400A52189 /* libtiffxx.a */; };
 		6255DBB32159CEF400A52189 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6255DB422159CEF400A52189 /* libjpeg.a */; };
 		6271A3DE2047A0D7005DB23B /* SwiftyTesseract.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6271A3D42047A0D7005DB23B /* SwiftyTesseract.framework */; };
 		6271A3E32047A0D7005DB23B /* SwiftyTesseractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6271A3E22047A0D7005DB23B /* SwiftyTesseractTests.swift */; };
@@ -47,7 +46,6 @@
 		6298307E220565D100C0A1A3 /* ltrresultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6298306A220565CE00C0A1A3 /* ltrresultiterator.h */; };
 		6298307F220565D100C0A1A3 /* baseapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 6298306B220565CE00C0A1A3 /* baseapi.h */; };
 		62983080220565D100C0A1A3 /* apitypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6298306C220565CE00C0A1A3 /* apitypes.h */; };
-		62983081220565D100C0A1A3 /* host.h in Headers */ = {isa = PBXBuildFile; fileRef = 6298306D220565CE00C0A1A3 /* host.h */; };
 		62983082220565D100C0A1A3 /* resultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6298306E220565CF00C0A1A3 /* resultiterator.h */; };
 		62983083220565D100C0A1A3 /* serialis.h in Headers */ = {isa = PBXBuildFile; fileRef = 6298306F220565CF00C0A1A3 /* serialis.h */; };
 		62983084220565D100C0A1A3 /* osdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = 62983070220565CF00C0A1A3 /* osdetect.h */; };
@@ -154,7 +152,6 @@
 		6255DB352159CEF400A52189 /* tiffconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffconf.h; sourceTree = "<group>"; };
 		6255DB3E2159CEF400A52189 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
 		6255DB3F2159CEF400A52189 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiff.a; sourceTree = "<group>"; };
-		6255DB412159CEF400A52189 /* libtiffxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiffxx.a; sourceTree = "<group>"; };
 		6255DB422159CEF400A52189 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
 		6255DBB52159CF3D00A52189 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		6271A3D42047A0D7005DB23B /* SwiftyTesseract.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyTesseract.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,7 +167,6 @@
 		6298306A220565CE00C0A1A3 /* ltrresultiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltrresultiterator.h; sourceTree = "<group>"; };
 		6298306B220565CE00C0A1A3 /* baseapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseapi.h; sourceTree = "<group>"; };
 		6298306C220565CE00C0A1A3 /* apitypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apitypes.h; sourceTree = "<group>"; };
-		6298306D220565CE00C0A1A3 /* host.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = host.h; sourceTree = "<group>"; };
 		6298306E220565CF00C0A1A3 /* resultiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resultiterator.h; sourceTree = "<group>"; };
 		6298306F220565CF00C0A1A3 /* serialis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serialis.h; sourceTree = "<group>"; };
 		62983070220565CF00C0A1A3 /* osdetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osdetect.h; sourceTree = "<group>"; };
@@ -256,7 +252,6 @@
 				6255DBB02159CEF400A52189 /* libtiff.a in Frameworks */,
 				6255DBAF2159CEF400A52189 /* libpng.a in Frameworks */,
 				6271A4CC2047A53C005DB23B /* libz.tbd in Frameworks */,
-				6255DBB22159CEF400A52189 /* libtiffxx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +319,6 @@
 				62983073220565CF00C0A1A3 /* capi.h */,
 				62983069220565CE00C0A1A3 /* genericvector.h */,
 				62983072220565CF00C0A1A3 /* helpers.h */,
-				6298306D220565CE00C0A1A3 /* host.h */,
 				6298306A220565CE00C0A1A3 /* ltrresultiterator.h */,
 				62983071220565CF00C0A1A3 /* ocrclass.h */,
 				62983070220565CF00C0A1A3 /* osdetect.h */,
@@ -389,7 +383,6 @@
 				629830CF2205663700C0A1A3 /* liblept.a */,
 				629830D02205663900C0A1A3 /* libtesseract.a */,
 				6255DB3F2159CEF400A52189 /* libtiff.a */,
-				6255DB412159CEF400A52189 /* libtiffxx.a */,
 				6255DB422159CEF400A52189 /* libjpeg.a */,
 			);
 			path = lib;
@@ -548,7 +541,6 @@
 				629830B12205661900C0A1A3 /* heap.h in Headers */,
 				6271A3E52047A0D7005DB23B /* SwiftyTesseract.h in Headers */,
 				629830CE2205661900C0A1A3 /* list.h in Headers */,
-				62983081220565D100C0A1A3 /* host.h in Headers */,
 				6255DB472159CEF400A52189 /* tiffvers.h in Headers */,
 				6298308E220565D100C0A1A3 /* unichar.h in Headers */,
 				629830C22205661900C0A1A3 /* ptra.h in Headers */,
@@ -933,7 +925,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftyTesseract/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_GENERATE_MAP_FILE = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -941,11 +933,13 @@
 					"$(PROJECT_DIR)/SwiftyTesseract/dependencies/lib/**",
 					"$(PROJECT_DIR)/SwiftyTesseract/dependencies/lib",
 				);
+				MARKETING_VERSION = 3.0.0;
 				"MODULEMAP_FILE[sdk=*]" = "";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AffinityForApps.SwiftyTesseract;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				"SWIFT_INCLUDE_PATHS[arch=*]" = "${SRCROOT}/SwiftyTesseract/dependencies/** ${SRCROOT}/SwiftyTesseract/dependencies/include/tesseract";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -968,7 +962,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftyTesseract/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_GENERATE_MAP_FILE = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -979,10 +973,12 @@
 					"$(PROJECT_DIR)/SwiftyTesseract/Protocols/dependencies/lib",
 					"$(PROJECT_DIR)/SwiftyTesseract/dependencies/old",
 				);
+				MARKETING_VERSION = 3.0.0;
 				"MODULEMAP_FILE[sdk=*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AffinityForApps.SwiftyTesseract;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				"SWIFT_INCLUDE_PATHS[arch=*]" = "${SRCROOT}/SwiftyTesseract/dependencies/** ${SRCROOT}/SwiftyTesseract/dependencies/include/tesseract";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
